@@ -2,9 +2,18 @@ body{
     background-color: #d8e7fb;
 }
 
+a.underlined {
+    text-decoration: underline;
+}
+
 .highlight {
     color: #31b0d5;
     font-weight: bold;
+    text-shadow: 5px;
+}
+
+.grey {
+    color: #999;
     text-shadow: 5px;
 }
 
@@ -23,9 +32,17 @@ body{
     margin-top: 0px !important;
 }
 
-.carousel{
-    text-align: center;
-    margin-top: 30px !important;
+.carousel-control {
+    border-radius: 10px !important;
+}
+
+.carousel-inner .item {
+    margin: 0% 20% 20% 20%!important;
+    text-align: left;
+}
+
+.carousel-indicators{
+    
 }
 
 .carousel-indicators li{
