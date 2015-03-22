@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Bakalárska práca - main</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/custom.css">
+        
+        <script src="js/libs/jquery/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/custom.js"></script>
+        
+    </head>
+    <body>
+        <script type="text/javascript">
+            $('.myCarousel').carousel({
+                pause: true,
+                interval: false
+            }) ;
+        </script>  
+        <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Prezentácia BP</a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Úvod</a></li>
+                        <li class="active"><a href="analysis.html">Analýza súčasného stavu</a></li>
+                        <li><a href="design.html">Návrh systému</a></li>
+                        <li><a href="implementation.html">Implementácia</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+            <div class="jumbotron">
+                <h1>SW podpora procesov zameraných na kvalitu</h1>
+                <p>Bakalárska práca</p>
+                <p>Autor: Nikola Gálová</p>
+            </div>
+           
+            <div class="content">
+                <div class="tabbable tabs-left">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a id="tab-kvalita" href="#kvalita" data-toggle="tab">Pojem kvality</a></li>
+                        <li><a id="tab-proces" href="#proces" data-toggle="tab">Manažment kvality</a></li>
+                        <li><a id="tab-systemy" href="#systemy" data-toggle="tab">Súčasné SW riešenia</a></li>
+                    </ul>
+                    <div class="tab-content col-md-9" style="text-align: justify">
+                        <div class="tab-pane active" id="kvalita">
+                            <div class="page-header">
+                                <h1>Pojem kvality vo výrobe</h1>
+                            </div>
+                            <p>
+                                Trh neustále kládol na kvalitu väčšie nároky, 
+                                ktoré podnecovali rôzne legislatívne procesy, čo smerovalo k 
+                                <span class="highlight">vývoju normy ISO. </span>
+                                Certifikácia kvality už dávno nie je výsadou len 
+                                firiem dodávajúcich súčiastky do automobilového priemyslu národným spoločnostiam. 
+                                Dnes má „ISO“ stále viac firiem z rôznych odvetví priemyslu.
+                            </p>
+                            <p>
+                                <span class="highlight">Kvalita</span>
+                                všeobecne predstavuje súhrn takých znakov výrobku, 
+                                resp. služby, ktoré sa vzťahujú ku schopnosti plniť stanovené a 
+                                predpokladané požiadavky z pohľadu zákazníka a taktiež porovnateľné s kvalitou konkurencie. 
+                                Kvalitu je teda potrebné chápať v širších súvislostiach ako len na úrovni plnenia kvalitatívnych kritérií  
+                                stanovených technickými resp. inými normami.
+                            </p>
+                        </div>
+                        <div class="tab-pane" id="proces">
+                            <div class="page-header">
+                                <h1>Manažment kvality s dôrazom na procesné riadenie</h1>
+                            </div>
+                            <p>
+                                Postupom času sa pripisoval väčší dôraz ako na samotnú kvalitu tak aj na kontrolu a 
+                                <span class="highlight">celkový manažment kvality</span>. 
+                                V podnikovej praxi postupne vznikli rôzne metodiky, techniky, nástroje, či dokonca filozofie 
+                                zamerané na komplexné riadenie kvality. Dnes najznámejšími sú napr.:
+                            </p>
+                                <ul>
+                                    <li>Metóda FMEA - analýza možných chýb a dôsledkov</li>
+                                    <li>Metóda SixSigma - systém zlepšovania produktivity, výkonnosti a kvality procesov, 
+                                        vychádzajúci z dokonalého porozumenia požiadaviek a očakávaní zákazníkov.</li>
+                                    <li>Systém TQM - má za cieľ neustále zvyšovanie hodnoty pre zákazníka, 
+                                        návrhom a neustálym zlepšovaním organizačných postupov a systémov.
+                                        Sústreďuje sa na manažovanie celého systému, a nielen na niektoré podsystémy, 
+                                        izolované procesy alebo funkčné oddelenia.</li>
+                                </ul>
+                            <p>Takéto zložité metódy a postupy sú náročné na dokumentovanie a spracovávanie údajov,
+                                čo zahŕňa sledovanie, zhromažďovanie, triedenie, zaznamenávanie a sprístupňovanie požadovaných informácií 
+                                o systéme manažmentu kvality a jeho funkcii. 
+                                <span class="highlight">Dokumentácia</span>, 
+                                v tlačenej papierovej podobe, je veľmi náročná, 
+                                zdĺhavá a neefektívna, náročná na správu a údržbu.
+                                Preto je nevyhnutná ich počítačová podpora.
+                                Prostriedky počítačovej podpory taktiež pomáhajú identifikovať, 
+                                graficky znázorniť, modifikovať a prezentovať procesy v organizácii.</p>
+                            <p>
+                                Systémy manažmentu kvality je možné integrovať s tvorbou 
+                                <span class="highlight">procesného riadenia</span>
+                                do jedného kompaktného a homogénneho celku. 
+                                Základnými spoločnými znakmi je jednoznačná orientácia na zákazníka, 
+                                tj. dosahovanie a rozvíjaní spokojnosti zákazníka a procesnej orientácie, 
+                                teda uplatňovanie procesného prístupu v oboch systémoch manažmentu.
+                            </p>
+                        </div>
+                        <div class="tab-pane" id="systemy">
+                            <div class="page-header">
+                                <h1>Súčasné SW riešenia</h1>
+                            </div>
+                            <p>
+                                Softvérových riešení podporujúcich manažment kvality a správu jeho dokumentácie je na trhu celá rada.
+                            </p>
+                            <p>
+                                Softvérové nástroje pre podporu manažmentu kvality, ktoré sú integrálnou súčasťou, teda 
+                                <span class="highlight">modulom, veľkého a komplexného informačného systému</span>
+                                ponúka napr. IS SAP, K2 a celá rada komplexných ERP informačných systémov.
+                            </p>
+                            <p>
+                                Inými sú také, ktoré sa zameriavajú len na podporu príslušnej oblasti manažmentu kvality, 
+                                napr. na správu dokumentácie, metrológie, štatistických metód a i.
+                                Niektoré je možné použiť 
+                                <span class="highlight">len na podporu špecifických činností</span>, 
+                                iné podporujú viac činností v rámci zabezpečovania kvality v celom podniku.
+                                Tieto nie sú súčasťou komplexného systému, teda nie sú na ňom závislé, ale ponúkajú možnosť rozhrania na dané komplexné IS. 
+                            </p>
+                        </div>
+                </div>
+            </div></div>
+
+
+        </div>
+    </body>
+</html>
