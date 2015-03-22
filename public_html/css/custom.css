@@ -2,13 +2,33 @@ body{
     background-color: #d8e7fb;
 }
 
+.content{
+    background-color: white;
+    border-radius: 20px; 
+    padding: 20px !important;
+}
+
+.carousel{
+    text-align: center;
+    margin-top: 30px !important;
+}
+
+.carousel-indicators li{
+    background-color: #286090 !important;
+}
+
+.carousel-indicators .active {
+    background-color: #d8e7fb !important;
+    border: 1px solid #286090;
+}
+
 .jumbotron{
     background-image: url('../img/itsupport.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(255,255,255,50);
     color: white;
-    border-radius: 0.8;
+    border-radius: 20px !important;
     padding: 15px;
 }
 
