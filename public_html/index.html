@@ -15,16 +15,16 @@ and open the template in the editor.
         
         <script src="js/libs/jquery/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/custom.js"></script>
         
     </head>
     <body>
-        <script>
+        <script type="text/javascript">
             $('.myCarousel').carousel({
                 pause: true,
                 interval: false
             }) ;
-        </script>
-         
+        </script>  
         <div class="container">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -34,8 +34,8 @@ and open the template in the editor.
                 <div>
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#">Úvod</a></li>
+                        <li><a href="#">Analýza súčasného stavu</a></li>
                         <li><a href="#">Návrh systému</a></li>
-                        <li><a href="#">Technológie</a></li>
                         <li><a href="#">Implementácia</a></li>
                     </ul>
                 </div>
@@ -47,8 +47,85 @@ and open the template in the editor.
                 <p>Bakalárska práca</p>
                 <p>Autor: Nikola Gálová</p>
             </div>
-            
+           
             <div class="content">
+                <div class="tabbable tabs-left">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a id="tab-uvod" href="#uvod" data-toggle="tab">Úvod do problematiky</a></li>
+                        <li><a id="tab-ciele" href="#ciele" data-toggle="tab">Ciele BP</a></li>
+                        <li><a id="tab-struktura" href="#struktura" data-toggle="tab">Štruktúra BP</a></li>
+                    </ul>
+                    <div class="tab-content col-md-9" style="text-align: justify">
+                        <div class="tab-pane active" id="uvod">
+                            <div class="page-header">
+                                <h1>Úvod</h1>
+                            </div>
+                            <p>
+                                V súčasnosti na trhu pôsobí množstvo podnikov z rôznych oblastí, 
+                                ktoré si navzájom  konkurujú. Schopnosť firmy presadiť sa 
+                                určuje najmä 
+                                <span class="highlight">kvalita výrobkov firmy</span>, 
+                                keďže dnes 
+                                kladie zákazník vysoké požiadavky ako na kvalitu výrobku, 
+                                tak aj na záruky a zabezpečenie podniku dlhodobo kvalitne vyrábať. 
+                            </p>
+                            <p>
+                                Značný dopad na kvalitu výroby je modelovanie podnikových procesov, 
+                                keďže každý výrobok vzniká určitým sledom činností, teda procesom.
+                                V súvislosti s tým sa dostávame k potrebe určitého SW nástroja
+                                podporujúceho procesy spojené s kvalitou, vyhodnocovanie údajov v prehľadnej forme,
+                                významnej pre vyšší manažment, teda hovoríme o určitom 
+                                <span class="highlight">systéme manažmentu kvality</span>.
+                            </p>
+                            <p>
+                                Cieľom bakalárskej práce je návrh a implementácia 
+                                grafického používateľského rozhrania práve takéhoto systému
+                                pre konktrétnu výrobnú firmu.
+                            </p>
+                        </div>
+                        <div class="tab-pane" id="ciele">
+                            <div class="page-header">
+                                <h1>Ciele bakalárskej práce</h1>
+                            </div>
+                            <p>
+                                Cieľom bakalárske práce je vytvorenie informačných softvérových prostriedkov 
+                                na popísanie a prípadné zlepšenie dosahovanej kvality výstupov v prostredí výrobnej spoločnosti.
+                            </p>
+                            <p class="highlight">
+                                <span class="glyphicon glyphicon-th-list"></span>
+                                Podciele:
+                            </p>
+                            <ul>
+                                <li>analyzovať aktuálny stav v oblasti kvality dát a procesov v prostredí konkrétnej firmy,</li>
+                                <li>analyzovať a definovať stav v oblasti SW podpory procesov v segmente trhu, na ktorom firma pôsobí,</li>
+                                <li>definovať zlepšenie a realizovať návrh GUI takéhoto systému,</li>
+                                <li>implementovať daný návrh pomocou technológie JSF,</li>
+                                <li>zhodnotiť prínosy výstupnej aplikácie.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" id="struktura">
+                            <div class="page-header">
+                                <h1>Štruktúra bakalárskej práce</h1>
+                                </div>
+                            
+                                <ol>
+                                    <li>Analýza súčasného stavu</li>
+                                    <li>Ciele bakalárskej práce 
+                                        <a href="#ciele" data-toggle="tab" title="Pozrieť">
+                                            <span class="glyphicon glyphicon-hand-right"></span>
+                                        </a>
+                                    </li>
+                                    <li>Návrh systému</li>
+                                    <li>Implementácia</li>
+                                    <li>Vyhodnetienie</li>
+                                </ol>
+                            
+                        </div>
+                </div>
+            </div>
+                
+                <div class="row">
+                <div class="col-md-9">
                 <p> dsfsihihiuvhdsi nvskdjvvsodnvsv
                 svfaosejv dknaoijvs sonvsoôjdvsvn dôansdjvosvnksjf skihvnsôvn
                 vnsds k sjvsjvpsdjvps </p>
@@ -91,7 +168,8 @@ and open the template in the editor.
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-            </div>
+                </div>
+            </div></div>
 
 
         </div>
