@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Bakalárska práca - main</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/custom.css">
+        
+        <script src="js/libs/jquery/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/custom.js"></script>
+        
+    </head>
+    <body>
+        <script type="text/javascript">
+            $('.myCarousel').carousel({
+                pause: true,
+                interval: false
+            }) ;
+        </script>  
+        <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Prezentácia BP</a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Úvod</a></li>
+                        <li><a href="analysis.html">Analýza súčasného stavu</a></li>
+                        <li class="active"><a href="design.html">Návrh systému</a></li>
+                        <li><a href="implementation.html">Implementácia</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+            <div class="jumbotron">
+                <h1>SW podpora procesov zameraných na kvalitu</h1>
+                <p>Bakalárska práca</p>
+                <p>Autor: Nikola Gálová</p>
+            </div>
+           
+            <div class="content">
+                <div class="tabbable tabs-left">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a id="tab-company-proces" href="#company-proces" data-toggle="tab">Procesy vo firme</a></li>
+                        <li><a id="tab-requirements" href="#requirements" data-toggle="tab">Požiadavky na softvér</a></li>
+                        <li><a id="tab-technologies" href="#technologies" data-toggle="tab">Použité technológie</a></li>
+                    </ul>
+                    <div class="tab-content col-md-9" style="text-align: justify">
+                        <div class="tab-pane active" id="company-proces">
+                            <div class="page-header">
+                                <h1>Procesy vo výrobnej firme</h1>
+                                
+                            </div>
+                            <h1><small class="highlight">Proces produkcie</small></h1>
+                            <p>Navrhovaný systém by mal podporovať tento proces. Priebeh procesu z hľadiska funkcionality systému
+                            v súlade s požiadavkami oddelenia kvality je nasledovný:</p>
+                            <ol>
+                                <li>Celý proces začína prijatím objednávky a založením výrobnej objednávky (fertigungsauftrag) v systéme SAP. 
+                                    Objednávka má atribúty: číslo objednávky, index výkresu, ktoré sú jednoznačné pre jednu objednávku.</li>
+                                <li>Vytvorenie objednávky v systéme QAM na základne vstupných údajov 
+                                    <span class="grey">a v ďalších verziách z údajov zo SAP-u.*</span></li>
+                                <li><span class="grey">Definovanie parametrov a tolerancií.
+                                    V ďalších verziách načítanie údajov z DWG/DXF súborov.*</span></li>
+                                <li>Samotná produkcia artiklov.</li>
+                                <li><span class="grey">Meranie a import dát do systému QAM, reporting.*</span></li>
+                                <li>Uzatvorenie objednávky v systéme QAM</li>
+                                <li>V prípade uspokojivých výslednok meraní nasleduje doručenie zákazky, v opačnom prípade
+                                    sa proces znova opakuje pod novou výrobnou objednávkou.
+                            </ol>
+                            <p class="grey">*Poznámka: Zahrnuté v budúcich verziách systému.</p>
+                            <p>Priebeh znázorňuje nasledujúci diagram:</p>
+                            <img class="img-rounded img-responsive" src="img/order_lifecycle.png" title="order lifecycle"/>
+                        </div>
+                        <div class="tab-pane" id="requirements">
+                            <div class="page-header">
+                                <h1>Požiadavky na softvér</h1>
+                            </div>
+                            <p>Grafické znázornenie požiadaviek predstavuje nasledujúci diagram prípadov použitia:</p>
+                            <img class="img-rounded img-responsive" src="img/use_case.png" title="use case"/>
+                        </div>
+                        <div class="tab-pane" id="technologies">
+                            <div class="page-header">
+                                <h1>Použité technológie</h1>
+                            </div>
+                            <div id="myCarousel" class="carousel slide" data-interval="false">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <h1><small class="highlight">J2EE</small></h1>
+                            <p>
+                                Celosvetovým trendom vývoja informačných systémov je orientácia na prostredie J2EE
+                                (Java 2 Enterprise Edition), ktoré spája výhody internetových technológií a technológií 
+                                používaných v rozsiahlych podnikových systémoch.
+                                Hlavnými prínosmi sú:
+                            </p>
+                            <ul>
+                                <li>nezávislosť na operačnom systéme klienta i serveru,</li>
+                                <li>databázová nezávislosť,</li>
+                                <li>automatická podpora bezpečnostných služieb,</li>
+                                <li>možnosť dynamického vyvažovania zátaťe serverov,</li>
+                                <li>jednoduchá výmena častí aplikácie bez prerušenia prevádzky a pod.</li>
+                            </ul>
+                        </div>
+
+                        <div class="item">
+                            <h1><small class="highlight">JSF</small></h1>
+                            <p>
+                                JavaServer Faces je framework pre vytváranie dynamického webového používateľského rozhrania. 
+                                Technológia sa začala vyvíjať od polovice roku 2001 
+                                a prvá verzia 1.0 bola vydaná spolu s J2EE v marci 2004.
+                                JSF je nasledovníkom starších technológií: 
+                                Java servlets a JSP. Nová technológia umožňuje:
+                            </p>
+                            <ul>
+                                <li>jednoduché umiestňovanie komponentov na stránku pomocou tagov,</li>
+                                <li>prepojiť eventy generované komponentmi na server-side kód,</li>
+                                <li>"zviazať" komponenty so server-side dátami (tzv. binding),</li>
+                                <li>uložiť a obnoviť UI stav prostredníctvom "životnosti" serverových žiadostí (tzv. request scopes).</li>
+                            </ul>
+                        </div>
+
+                        <div class="item">
+                            <h1><small class="highlight">Životný cyklus JSF stránky (Facelet)</small></h1>
+                            <img class="img-rounded img-responsive" src="img/jsf-lifecycle.gif" title="jsf lifecycle" />
+                        </div>
+
+                        <div class="item">
+                            <h1><small class="highlight">PrimeFaces</small></h1>
+                            <p>PrimeFaces je voľne dostupná knižnica JSF komponentov s rôznymi rozšíreniami. Zahŕňa:</p>
+                            <ul>
+                                <li>rozsiahlu sadu komponentov (HtmlEditor, Tabuľky, Grafy, Dialógy, TabView, 
+                                    <a href="http://www.primefaces.org/showcase/" target="_blank" 
+                                       title="pozri PrimeFaces Showcase" class="underlined"> a ďalšie</a>
+                                    ),
+                                </li>
+                                <li>vstavaný Ajax na základe štandardu JSF 2.0 Ajax APIs,</li>
+                                <li>mobile ui kit pre tvorbu mobilných webových aplikácií,</li>
+                                <li>30 vstavaných tém a možnosť tvorby vlastných tém,</li>
+                                <li>pozostáva z jedného súboru jar a nevyžiaduje žiadnu špeciálnu konfiguráciu</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                            
+                        </div>
+                </div>
+            </div>
+            </div>
+
+
+        </div>
+    </body>
+</html>
